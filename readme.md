@@ -48,7 +48,66 @@ git 指令
 		// 删错了,版本库一键还原
 		git checkout -- 文件 
 
+远程仓库
+	// 添加仓库 git@github.... 自己github仓库地址
+	git remote add origin git@github.com:michaelliao/learngit.git
 	
+	// 内容推送到远程库 远程库默认origin 当前分支 master 第一次推送加 -u 后续可省略
+	git push -u origin master
+
+	// 远程库克隆 
+	git clone git@github.com:michaelliao/gitskills.git(远程库地址)
+
+分支管理
+	// 查看所有分支 * 指当前
+	git branch
+
+	// 创建和合并
+		// 创建并切换分支
+		git checkout -b <name>
+
+		// 创建 切换两步 ==  -b
+		git branch <name>
+		git checkout <name>
+
+		// 分支合并
+		git merge <name>
+
+		// 删除分支
+		git branch -d <name>
+
+		// 强制删除分支 (没有与其他分支合并)
+		git branch -D <name>
+		
+		// 查看分支合并图
+		git log --graph
+	
+	// 分支管理
+		// 合并分支 --on-ff参数表示禁用Fast forward 可以查看合并历史
+		git merge --no-ff -m '描述' <name>
+	
+	// Bug分支
+		// 当前工作现场储藏起来
+		git stash
+
+		// 确定某分支修复，创建临时分支修改合并删除
+
+		// 查看之前工作现场
+		git stash list
+	
+		// 恢复工作现场
+			1. 恢复现场，不删除存储内容
+			git stash drop
+
+			2. 恢复同时删除存储
+			git stash pop
+
+		// 根据stashID,恢复指定内容
+		git stash apply stash@{0}
+
+
+
+
 
 	
 
