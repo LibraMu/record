@@ -1,4 +1,4 @@
-Git 指令
+												Git 指令 ( 逐步完善 )
 
 基本流程
 
@@ -70,14 +70,14 @@ Git 指令
 	// 添加仓库 git@github.... 自己github仓库地址
 	git remote add origin git@github.com:michaelliao/learngit.git
 	
+	// 远程库信息 -v 显示更详细信息
+	git remote [-v]
+
 	// 主分支推送到远程库 远程库默认origin 当前分支 master 第一次推送加 -u 后续可省略
 	git push -u origin master
 
 	// 其他分支推送
 	git push origin <name>
-
-	// 远程库信息 -v 显示更详细信息
-	git remote [-v]
 
 	// 远程库克隆 
 	git clone git@github.com:michaelliao/gitskills.git(远程库地址)
@@ -85,10 +85,16 @@ Git 指令
 	// 获取远程库分支，更新本地库
 	git pull origin master
 
+	// 删除远程分支
+	git push origin --delete <branch-name>
+
+	// 远程库重命名
+	git remote rename <old-name> <new-name>
+
 分支管理
 
-	// 查看所有分支 * 指当前
-	git branch
+	// 查看所有分支 * 指当前 -a表示全部分支包括远程库分支
+	git branch [-a]
 
 	// 创建和合并
 		// 创建并切换分支
@@ -132,6 +138,9 @@ Git 指令
 
 		// 根据stashID,恢复指定内容
 		git stash apply stash@{0}
+
+	// 分支重命名 ( 如果已经推送远程库,要删除远程库分支 ) 
+	git branch -m <old-name> <new-name>
 
 
 
