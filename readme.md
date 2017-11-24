@@ -1,6 +1,7 @@
 git 指令
 
 基础指令
+
 	// 获取SSH Key 
 	ssh-keygen -t rsa -C "自己邮箱@"
 
@@ -16,6 +17,7 @@ git 指令
 	git commit -m ' 说明 '
 
 时光机
+
 	// 版本回退
 		// 提交的历史记录 --pretty=oneline 输出一行
 		git log [--pretty=oneline]
@@ -49,16 +51,21 @@ git 指令
 		git checkout -- 文件 
 
 远程仓库
+
 	// 添加仓库 git@github.... 自己github仓库地址
 	git remote add origin git@github.com:michaelliao/learngit.git
 	
 	// 内容推送到远程库 远程库默认origin 当前分支 master 第一次推送加 -u 后续可省略
 	git push -u origin master
 
+	// 远程库信息 -v 显示更详细信息
+	git remote [-v]
+
 	// 远程库克隆 
 	git clone git@github.com:michaelliao/gitskills.git(远程库地址)
 
 分支管理
+
 	// 查看所有分支 * 指当前
 	git branch
 
@@ -105,6 +112,7 @@ git 指令
 		// 根据stashID,恢复指定内容
 		git stash apply stash@{0}
 
+	// 多人协作
 
 
 
