@@ -55,8 +55,11 @@ git 指令
 	// 添加仓库 git@github.... 自己github仓库地址
 	git remote add origin git@github.com:michaelliao/learngit.git
 	
-	// 内容推送到远程库 远程库默认origin 当前分支 master 第一次推送加 -u 后续可省略
+	// 主分支推送到远程库 远程库默认origin 当前分支 master 第一次推送加 -u 后续可省略
 	git push -u origin master
+
+	// 其他分支推送
+	git push origin <name>
 
 	// 远程库信息 -v 显示更详细信息
 	git remote [-v]
@@ -89,7 +92,7 @@ git 指令
 		// 查看分支合并图
 		git log --graph
 	
-	// 分支管理
+	// 分支合并
 		// 合并分支 --on-ff参数表示禁用Fast forward 可以查看合并历史
 		git merge --no-ff -m '描述' <name>
 	
@@ -112,7 +115,6 @@ git 指令
 		// 根据stashID,恢复指定内容
 		git stash apply stash@{0}
 
-	// 多人协作
 
 
 
