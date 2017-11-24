@@ -67,6 +67,9 @@ git 指令
 	// 远程库克隆 
 	git clone git@github.com:michaelliao/gitskills.git(远程库地址)
 
+	// 获取远程库分支，更新本地库
+	git pull origin master
+
 分支管理
 
 	// 查看所有分支 * 指当前
