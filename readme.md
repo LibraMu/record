@@ -1,6 +1,6 @@
-git 指令
+Git 指令
 
-	基础指令
+基本流程
 
 	// 获取SSH Key 
 	ssh-keygen -t rsa -C "自己邮箱@"
@@ -15,6 +15,18 @@ git 指令
 	// 文件添加和提交到仓库
 	git add 文件
 	git commit -m ' 说明 '
+
+	// 添加仓库 git@github.... 自己github仓库地址
+	git remote add origin git@github.com:michaelliao/learngit.git
+	
+	// 主分支推送到远程库 远程库默认origin 当前分支 master 第一次推送加 -u 后续可省略
+	git push -u origin master
+
+	// 获取远程库分支，更新本地库
+	git pull origin master
+
+	// 远程库克隆 ( 其他文件夹使用 )
+	git clone git@github.com:michaelliao/gitskills.git(远程库地址)
 
 时光机
 
@@ -117,6 +129,8 @@ git 指令
 
 		// 根据stashID,恢复指定内容
 		git stash apply stash@{0}
+
+
 
 
 
