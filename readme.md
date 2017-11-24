@@ -16,6 +16,9 @@ Git 指令
 	git add 文件
 	git commit -m ' 说明 '
 
+	// 文件查询更改内容(文件放进暂存区add前查询)
+	git diff
+
 	// 添加仓库 git@github.... 自己github仓库地址
 	git remote add origin git@github.com:michaelliao/learngit.git
 	
