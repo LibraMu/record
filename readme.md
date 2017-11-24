@@ -1,6 +1,6 @@
 git 指令
 
-基础指令
+	基础指令
 
 	// 获取SSH Key 
 	ssh-keygen -t rsa -C "自己邮箱@"
