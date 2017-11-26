@@ -94,6 +94,9 @@ Git 指令 ( 逐步完善 )
 	// 更改远程库地址
 	git remote set-url origin <url>
 
+	// 分支提交冲突 ( 强制更改 )
+	git push origin <master> -f
+
 分支管理
 
 	// 查看所有分支 * 指当前 -a表示全部分支包括远程库分支
@@ -149,6 +152,14 @@ Git 指令 ( 逐步完善 )
 	
 	// 查看暂存区文件
 	git ls-files
+
+	// 删除文件
+		// 从版本库删除文件
+		git rm 文件
+		git commit
+
+		// 删错了,版本库一键还原
+		git checkout -- 文件 
 
 
 
