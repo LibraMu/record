@@ -91,6 +91,9 @@ Git 指令 ( 逐步完善 )
 	// 远程库重命名
 	git remote rename <old-name> <new-name>
 
+	// 更改远程库地址
+	git remote set-url origin <url>
+
 分支管理
 
 	// 查看所有分支 * 指当前 -a表示全部分支包括远程库分支
