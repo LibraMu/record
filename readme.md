@@ -155,7 +155,7 @@ Git 指令 ( 逐步完善 )
 
 	// 删除文件
 		// 从版本库删除文件
-		git rm 文件
+		git rm 文件 or git rm -r 文件夹/
 		git commit
 
 		// 删错了,版本库一键还原
