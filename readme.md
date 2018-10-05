@@ -150,13 +150,23 @@ Git 指令 ( 逐步完善 )
 
 提交冲突
 
-	// 	提交代码有注释
+	// 提交代码有注释
 		// git commit -m “文件名”
+
+	// failed to push some refs to @github.com 推送仓库问题
+		//
+
+	// refusing to merge unrelated histories 拒绝合并不相关历史
+		// git pull <origin master> --allow-unrelated-histories
+
+		// Please enter a commit message to explain why this merge is necessary,especially if it merges an updated upstream into a topic branch 
+		// 没有图确实有些抽象，我也只能凭借回忆了： 
+		// 在出现需要你输入新的merge信息的终端窗口，在最上面的提示句下有一行空格，按照链接的帮助，按”i”进入输入模式，随便输入个什么，然后 esc，直接输入”:wq”你会发现这个出现在终端的最下面，这是OK的，最后 enter，就OK了。
 
 提交流程
 	
 	// git add .
-	// git commit 
+	// git commit -m "备注" 必须
 	// git push origin master 推送到远程仓库
 
 
