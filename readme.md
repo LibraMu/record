@@ -153,6 +153,25 @@ Git 指令 ( 逐步完善 )
 	// 	提交代码有注释
 		// git commit -m “文件名”
 
+提交流程
+	
+	// git add .
+	// git commit 
+	// git push origin master 推送到远程仓库
+
+
+文件管理
+	
+	// 查看暂存区文件
+	git ls-files
+
+	// 删除文件
+		// 从版本库删除文件
+		git rm 文件 or git rm -r 文件夹/
+		git commit
+
+		// 删错了,版本库一键还原
+		git checkout -- 文件 
 
 
 
